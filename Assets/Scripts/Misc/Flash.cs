@@ -17,7 +17,7 @@ public class Flash : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         defaultMat = spriteRenderer.material;
     }
-
+    
     public IEnumerator FlashRoutine()
     {
         spriteRenderer.material = whiteFlashMat;
