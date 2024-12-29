@@ -4,10 +4,10 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : Singleton<PlayerController>
 {
     public bool FacingLeft { get { return facingLeft; } }
-    public static PlayerController Instance;
+    
 
 
     [SerializeField] private float moveSpeed = 1f;
@@ -24,9 +24,10 @@ public class PlayerController : MonoBehaviour
     private bool facingLeft = false;
     private bool isDashing = false;
 
-    private void Awake()
+    protected override void Awake()
     {
-        Instance = this;
+        base.Awake();
+        
         playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
