@@ -6,29 +6,25 @@ public class Sword : MonoBehaviour, IWeapon
 {
     [SerializeField] private GameObject slashAnimPrefab;
     [SerializeField] private Transform slashAnimSpawnPoint;
-    [SerializeField] private Transform weaponCollider;
     [SerializeField] private float swordAttackCD = .5f;
     //[SerializeField] private WeaponInfo weaponInfo;
 
-    //private Transform weaponCollider;
+    private Transform weaponCollider;
     private Animator myAnimator;
-    private PlayerController playerController;
-    private ActiveWeapon activeWeapon;
+    
     
     private GameObject slashAnim;
 
     private void Awake()
     {
-        playerController = GetComponentInParent<PlayerController>();
-        activeWeapon = GetComponentInParent<ActiveWeapon>();
         myAnimator = GetComponent<Animator>();
     }
 
-    /*private void Start()
+    private void Start()
     {
         weaponCollider = PlayerController.Instance.GetWeaponCollider();
         slashAnimSpawnPoint = GameObject.Find("SlashSpawnPoint").transform;
-    }*/
+    }
 
     private void Update()
     {
