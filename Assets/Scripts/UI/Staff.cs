@@ -35,10 +35,7 @@ public class Staff : MonoBehaviour, IWeapon
         newLaser.GetComponent<MagicLaser>().UpdateLaserRange(weaponInfo.weaponRange);
     }*/
 
-    public WeaponInfo GetWeaponInfo()
-    {
-        return weaponInfo;
-    }
+    
     
     private void MouseFollowWithOffset()
     {
@@ -56,4 +53,10 @@ public class Staff : MonoBehaviour, IWeapon
             ActiveWeapon.Instance.transform.rotation = Quaternion.Euler(0, 0, angle);
         }
     }
+
+    public WeaponInfo GetWeaponInfo()
+    {
+        return weaponInfo;
+    }
+
 }
