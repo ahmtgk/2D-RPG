@@ -53,7 +53,7 @@ public class ActiveInventory : MonoBehaviour
             Destroy(ActiveWeapon.Instance.CurrentActiveWeapon.gameObject); 
         }
 
-        if (!transform.GetChild(activeSlotIndexnum).GetComponent<InventorySlot>())
+        if (!transform.GetChild(activeSlotIndexnum).GetComponentInChildren<InventorySlot>().GetWeaponInfo() == null)
         {
             ActiveWeapon.Instance.WeaponNull();
             return;
