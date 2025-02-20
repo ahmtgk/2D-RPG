@@ -1,19 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem.XR.Haptics;
 
 public class DamageSource : MonoBehaviour
 {
-    [SerializeField] private int damageAmount = 1;
-    
-    private void OnTriggerEnter2D(Collider2D other)
+    private int damageAmount;
+
+    private void Start()
     {
-        if (other.gameObject.GetComponent<EnemyHealth>())
-        {
-            EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
-            enemyHealth.TakeDamage(damageAmount);
-        }
+        MonoBehaviour currenActiveWeapon = ActiveWeapon.Instance.CurrentActiveWeapon;
+        damageAmount = (currenActiveWeapon as IWeapon).GetWeaponInfo().weaponDamage;
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
+        enemyHealth?.TakeDamage(damageAmount);
+    }
 }
