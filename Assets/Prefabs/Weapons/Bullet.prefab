@@ -164,4 +164,4 @@ MonoBehaviour:
   moveSpeed: 8
   particleOnHitPrefabVFX: {fileID: 6838860608428277125, guid: ae1fd5df645195545ac1ba1958c04fa4, type: 3}
   isEnemyProjectile: 1
-  projectileRange: 10
+  projectileRange: 30
