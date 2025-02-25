@@ -18220,24 +18220,48 @@ PrefabInstance:
     m_TransformParent: {fileID: 451884112}
     m_Modifications:
     - target: {fileID: 1122179863868900254, guid: 0d55f209a96e56646ab4a300af7c548c, type: 3}
-      propertyPath: angleSpread
-      value: 160
+      propertyPath: stagger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1122179863868900254, guid: 0d55f209a96e56646ab4a300af7c548c, type: 3}
-      propertyPath: bulletMoveSpeed
+      propertyPath: restTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122179863868900254, guid: 0d55f209a96e56646ab4a300af7c548c, type: 3}
+      propertyPath: oscillate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122179863868900254, guid: 0d55f209a96e56646ab4a300af7c548c, type: 3}
+      propertyPath: burstCount
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1122179863868900254, guid: 0d55f209a96e56646ab4a300af7c548c, type: 3}
+      propertyPath: angleSpread
+      value: 165
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122179863868900254, guid: 0d55f209a96e56646ab4a300af7c548c, type: 3}
+      propertyPath: bulletMoveSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122179863868900254, guid: 0d55f209a96e56646ab4a300af7c548c, type: 3}
+      propertyPath: startingDistance
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122179863868900254, guid: 0d55f209a96e56646ab4a300af7c548c, type: 3}
+      propertyPath: timeBetweenBursts
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122179863868900254, guid: 0d55f209a96e56646ab4a300af7c548c, type: 3}
       propertyPath: projectilesPerBurst
-      value: 20
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2896953437114507494, guid: 0d55f209a96e56646ab4a300af7c548c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.88
+      value: 6.21
       objectReference: {fileID: 0}
     - target: {fileID: 2896953437114507494, guid: 0d55f209a96e56646ab4a300af7c548c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.86
+      value: -3.74
       objectReference: {fileID: 0}
     - target: {fileID: 2896953437114507494, guid: 0d55f209a96e56646ab4a300af7c548c, type: 3}
       propertyPath: m_LocalPosition.z
