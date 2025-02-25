@@ -61,7 +61,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     {
         if (!canTakeDamage) { return; }
 
-        //ScreenShakeManager.Instance.ShakeScreen();
+        ScreenShakeManager.Instance.ShakeScreen();
         knockback.GetKnockedBack(hitTransform, knockBackThrustAmount);
         StartCoroutine(flash.FlashRoutine());
         canTakeDamage = false;
