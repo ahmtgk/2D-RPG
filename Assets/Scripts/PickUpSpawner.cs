@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class PickUpSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject goldCoinPrefab;//, healthGlobe, staminaGlobe;
+    [SerializeField] private GameObject goldCoin, healthGlobe, staminaGlobe;
 
     public void DropItems()
     {
-        Instantiate(goldCoinPrefab, transform.position, Quaternion.identity);
-        /*int randomNum = Random.Range(1, 5);
+        int randomNum = Random.Range(1, 5);
 
         if (randomNum == 1)
         {
@@ -29,6 +28,6 @@ public class PickUpSpawner : MonoBehaviour
             {
                 Instantiate(goldCoin, transform.position, Quaternion.identity);
             }
-        }*/
+        }
     }
 }
