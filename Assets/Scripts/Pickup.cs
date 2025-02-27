@@ -27,10 +27,10 @@ public class Pickup : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    /*private void Start()
+    private void Start()
     {
         StartCoroutine(AnimCurveSpawnRoutine());
-    }*/
+    }
 
     private void Update()
     {
@@ -62,7 +62,7 @@ public class Pickup : MonoBehaviour
         }
     }
 
-    /*private IEnumerator AnimCurveSpawnRoutine()
+    private IEnumerator AnimCurveSpawnRoutine()
     {
         Vector2 startPoint = transform.position;
         float randomX = transform.position.x + Random.Range(-2f, 2f);
@@ -84,7 +84,7 @@ public class Pickup : MonoBehaviour
         }
     }
 
-    private void DetectPickupType()
+    /*private void DetectPickupType()
     {
         switch (pickUpType)
         {

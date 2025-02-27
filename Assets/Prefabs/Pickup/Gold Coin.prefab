@@ -188,7 +188,25 @@ MonoBehaviour:
   moveSpeed: 2
   animCurve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1.0820007
+      value: 0.003588438
+      inSlope: -1.6374424
+      outSlope: -1.6374424
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.09694854
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
