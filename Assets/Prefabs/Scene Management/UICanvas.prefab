@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 1485361702023741573}
   - component: {fileID: 2594529657305311165}
   m_Layer: 5
-  m_Name: Stamina Image (2)
+  m_Name: Image (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -513,7 +513,7 @@ GameObject:
   - component: {fileID: 8935669501886394495}
   - component: {fileID: 1429960819200628493}
   m_Layer: 5
-  m_Name: Heart Slider
+  m_Name: Health Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -919,7 +919,7 @@ GameObject:
   - component: {fileID: 5101327251688945697}
   - component: {fileID: 530437706030123168}
   m_Layer: 5
-  m_Name: Stamina Image (1)
+  m_Name: 'Image (1) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1282,7 +1282,7 @@ GameObject:
   - component: {fileID: 101742712696355070}
   - component: {fileID: 1167195313194714704}
   m_Layer: 5
-  m_Name: Stamina Image
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
