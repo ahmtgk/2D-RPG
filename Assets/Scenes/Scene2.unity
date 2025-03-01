@@ -8867,6 +8867,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8489359927655502552, guid: cbe542eeeb58b7148ad92542c3c8dd44, type: 3}
+      propertyPath: fullStaminaImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 350d3368087082a45a6399bc19c980a5, type: 3}
+    - target: {fileID: 8489359927655502552, guid: cbe542eeeb58b7148ad92542c3c8dd44, type: 3}
+      propertyPath: emptyStaminaImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 6c311ea944f52654d96ef283f77c366e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
