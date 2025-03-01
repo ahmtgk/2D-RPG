@@ -89,17 +89,15 @@ public class Pickup : MonoBehaviour
         switch (pickUpType)
         {
             case PickUpType.GoldCoin:
-                //EconomyManager.Instance.UpdateCurrentGold();
-                Debug.Log("GoldCoin");
-                break;
+                EconomyManager.Instance.UpdateCurrentGold();
 
+                break;
             case PickUpType.HealthGlobe:
                 PlayerHealth.Instance.HealPlayer();
-                Debug.Log("HealthGlobe");
+
                 break;
             case PickUpType.StaminaGlobe:
-                //Stamina.Instance.RefreshStamina();
-                Debug.Log("StaminaGlobe");
+                Stamina.Instance.RefreshStamina();
                 break;
         }
     }
